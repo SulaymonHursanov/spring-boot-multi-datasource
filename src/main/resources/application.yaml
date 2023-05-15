@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  multiDatasource: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_multi_db_primary
+    username: postgres
+    password: root
+  second-datasource:
+    url: jdbc:postgresql://localhost:5432/test_multi_db_secondary
+    username: postgres
+    password: root
+#logging:
+#  level:
+#    org.hibernate: debug
+#    com.zaxxer.hikari: debug
